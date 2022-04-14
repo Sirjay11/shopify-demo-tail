@@ -4,6 +4,8 @@
   "description": "[![Generic badge](https://img.shields.io/badge/course%20available%3F-yes-green.svg)](https://shields.io/)",
   "main": "index.js",
   "dependencies": {
+    "@shopify/admin-ui-extensions": "^1.0.1",
+    "@shopify/post-purchase-ui-extensions": "^0.13.3",
     "acorn": "^7.4.1",
     "acorn-node": "^1.8.2",
     "acorn-walk": "^7.2.0",
@@ -85,6 +87,7 @@
     "yaml": "^1.10.2"
   },
   "devDependencies": {
+    "@shopify/checkout-ui-extensions-run": "^0.7.2",
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.8",
     "tailwindcss": "^3.0.23"
