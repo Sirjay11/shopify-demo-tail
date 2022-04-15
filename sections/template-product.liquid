@@ -2,7 +2,7 @@
   rel="stylesheet"
   href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 />
-<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
 
 {% assign selected_variant = product.selected_or_first_available_variant %}
 
@@ -259,37 +259,36 @@
       "name": "Vendor",
       "limit": 1
     },
-  {
-    "type": "title",
-    "name": "Title",
-    "limit": 1
-
-  },
-  {
-    "type": "price",
+    {
+      "type": "title",
+      "name": "Title",
+      "limit": 1
+    },
+    {
+      "type": "price",
       "name": "Price",
       "limit": 1
-  },
-  {
-    "type": "variant_selector",
-    "name": "Variant Selector",
-    "limit": 1
-  },
-  {
-    "type": "quantity",
-    "name": "Quantity",
-    "limit": 1
-  },
-  {
-    "type": "description",
-    "name": "Description",
-    "limit": 1
-  },
-  {
-    "type": "checkout_buttons",
-    "name": "Checkout Buttons",
-    "limit": 1
-  }
+    },
+    {
+      "type": "variant_selector",
+      "name": "Variant Selector",
+      "limit": 1
+    },
+    {
+      "type": "quantity",
+      "name": "Quantity",
+      "limit": 1
+    },
+    {
+      "type": "description",
+      "name": "Description",
+      "limit": 1
+    },
+    {
+      "type": "checkout_buttons",
+      "name": "Checkout Buttons",
+      "limit": 1
+    }
   ]
 }
 {% endschema %}

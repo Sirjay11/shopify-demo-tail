@@ -12,7 +12,7 @@
           <a href="{{ article.url }}">
             <img
             class="w-full h-80 object-cover"
-            src="{{ article.image | img_url: 'medium' }}"
+            src="{{ article.image | image_url }}"
             alt="{{ article.image.alt }}"
           />
           </a>
@@ -51,12 +51,25 @@
   {% endpaginate %}
 </div>
 
-{% schema %} { "name": "Blog", "settings": [
+{% schema %}
 {
-  "type": "text",
-  "id": "blog_read_more",
-  "label": "read_more_label",
-  "default": "Read More"
-}, 
-{ "type": "range", "id":
-"number_of_blog_posts", "step": 1, "min": 1, "max": 6, "label": "Blog post per page", "default": 3 } ] } {% endschema %}
+  "name": "Blog",
+  "settings": [
+    {
+      "type": "text",
+      "id": "blog_read_more",
+      "label": "read_more_label",
+      "default": "Read More"
+    },
+    {
+      "type": "range",
+      "id": "number_of_blog_posts",
+      "step": 1,
+      "min": 1,
+      "max": 6,
+      "label": "Blog post per page",
+      "default": 3
+    }
+  ]
+}
+{% endschema %}
